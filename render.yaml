@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: salary-management-system
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: SECRET_KEY
+        value: salary-management-secret-key
